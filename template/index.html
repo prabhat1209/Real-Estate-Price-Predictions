@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Real Estate Price Prediction Model</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    </head>
+    <body>
+        <h1>Real Estate Price Predictions</h1>
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="text" name="crim" placeholder="CRIM" required="required"/>
+            <input type="text" name="zn" placeholder="ZN" required="required"/>
+            <input type="text" name="indus" placeholder="INDUS" required="required"/>
+            <input type="text" name="chas" placeholder="CHAS" required="required"/>
+            <input type="text" name="nox" placeholder="NOX" required="required"/>
+            <input type="text" name="rm" placeholder="RM" required="required"/>
+            <input type="text" name="age" placeholder="AGE" required="required"/>
+            <input type="text" name="dis" placeholder="DIS" required="required"/>
+            <input type="text" name="rad" placeholder="RAD" required="required"/>
+            <input type="text" name="tax" placeholder="TAX" required="required"/>
+            <input type="text" name="ptratio" placeholder="PTRATIO" required="required"/>
+            <input type="text" name="b" placeholder="B" required="required"/>
+            <input type="text" name="lstat" placeholder="LSTAT" required="required"/>
+            <button type="submit" class="btn btn-primary btn-block btn-large" >Predict Price</button> 
+        </form>
+        <br>
+        <br>
+        {{prediction_text}}    
+    </body>
+</html>
