@@ -15,7 +15,7 @@ def predict():
     final_features = [np.array(int_features)]
     prediction = predict_model.predict(final_features)
     output = round(abs(prediction[0]))
-    return render_template('index.html',prediction_text="Estimated Cost of house is {}".format(output))
+    return render_template('index.html',prediction_text="Estimated Cost of house is {} $".format(output))
 
 if __name__ == '__main__':
     app.run(debug=True)
