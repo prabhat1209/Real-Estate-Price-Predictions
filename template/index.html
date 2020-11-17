@@ -16,7 +16,7 @@
       }
 
       form button {
-          display: block;
+        display: block;
         width: 90%;
         margin: auto;
         height: 30px;
@@ -29,82 +29,82 @@
     <h1>Real Estate Price Predictions</h1>
     <form action="{{url_for('predict')}}" method="post">
       <input
-        type="text"
+        type="number"
         name="crim"
         placeholder="Crime rate per capita"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="zn"
         placeholder="Proportion of residential land zoned for lots over 
             25,000 sq.ft."
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="indus"
         placeholder="Proportion of non-retail business acres per town"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="chas"
         placeholder="Charles River dummy variable (= 1 if tract bounds 
             river; 0 otherwise)"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="nox"
         placeholder="Nitric oxides concentration (parts per 10 million)"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="rm"
         placeholder="Average number of rooms per dwelling"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="age"
         placeholder="Proportion of owner-occupied units built prior to 1940"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="dis"
         placeholder="Weighted distances to five Boston employment centres"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="rad"
         placeholder="Index of accessibility to radial highways"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="tax"
         placeholder="Full-value property-tax rate per $10,000"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="ptratio"
         placeholder="Pupil-teacher ratio by town"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="b"
         placeholder="1000(Bk - 0.63)^2 where Bk is the proportion of blacks 
             by town"
         required="required"
       />
       <input
-        type="text"
+        type="number"
         name="lstat"
         placeholder="% lower status of the population"
         required="required"
